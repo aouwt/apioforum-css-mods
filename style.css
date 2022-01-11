@@ -9,7 +9,6 @@ body {
 }
 
 
-
 .header {
 	position: sticky;
 	top: 10px;
@@ -233,11 +232,17 @@ nav#navbar .links { display: flex; }
 }
 
 main {
-    max-width: 60ch;
+    max-width: 100ch;
     margin: auto;
     border: 1px black solid;
     padding: 10px;
     background-color: white;
+}
+
+main h2, h3, h4, h5, h6 {
+	text-align: right;
+	background-color: lightgrey;
+	padding: 10px;
 }
 
 blockquote {
