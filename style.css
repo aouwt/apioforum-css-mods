@@ -12,6 +12,9 @@ body {
 .header {
 	position: sticky;
 	top: 10px;
+	background-color: rgba(255,255,255,0.9);
+	padding: 0 10vw 1pt 1pt;
+	width: fit-content;
 }
 
 .post { margin: 0px; }
