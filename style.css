@@ -239,8 +239,7 @@ main {
     background-color: white;
 }
 
-main h2, h3, h4, h5, h6 {
-	text-align: right;
+main h1, h2, h3, h4, h5, h6 {
 	background-color: lightgrey;
 	padding: 10px;
 }
