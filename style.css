@@ -10,7 +10,7 @@ body {
 
 
 .header {
-	position: sticky;
+	position: var(--position);
 	top: 10px;
 	background-color: rgba(255,255,255,0.9);
 	padding: 0 10vw 1pt 1pt;
@@ -115,7 +115,7 @@ img { max-width: 100% }
 
 nav#navbar { 
 	background-image: linear-gradient(rgba(255,0,255,0.5), rgba(255,0,255,0.9));
-	position: sticky;
+	position: var(--position);
 	top: 10px;
 	padding: 5px;
 	margin: 1px;
@@ -188,18 +188,26 @@ nav#navbar .links { display: flex; }
 }
 
 /* wide screens */
-@media all and (min-width: 600px) { 
+@media all and (min-width: 120ch) { 
 	.listing-title { font-size: larger; }
+	
+	:root {
+		--position: sticky;
+  }
 }
 
 /* small screens */
-@media not all and (min-width: 600px) {
+@media not all and (min-width: 120ch) {
 	.thread-listing-creation { font-size: small; }
 	.thread-listing-creator {
 		max-width: 75px; 
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
+	}
+	
+	:root {
+		--position: inherit;
 	}
 }
 
